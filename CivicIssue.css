@@ -1,0 +1,378 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background: #ffffff;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.civic-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+/* Navigation */
+.navbar {
+  min-height: 82px;
+  padding: 16px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #172033;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.brand-icon {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #2670df;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  color: #475569;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #2563eb;
+}
+
+.register-btn {
+  display: inline-block;
+  padding: 13px 23px;
+  border-radius: 9px;
+  background: #2670df;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.register-btn:hover,
+.signin-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Main content */
+main {
+  flex: 1;
+}
+
+/* Welcome section */
+.hero {
+  min-height: 340px;
+  padding: 60px 7% 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    #f8fbff 0%,
+    #ffffff 100%
+  );
+}
+
+.eyebrow {
+  margin: 0 0 22px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #172033;
+  font-size: clamp(32px, 4.5vw, 54px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  font-weight: 750;
+}
+
+.hero h1 span {
+  color: #2670df;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin: 22px auto 0;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Home sign-in card */
+.signin-section {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 55px;
+}
+
+.signin-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 30px;
+  border: 1px solid #e7ebf2;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 10px 35px rgba(23, 32, 51, 0.05);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #64748b;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.back-link:hover {
+  color: #2563eb;
+}
+
+.signin-label {
+  margin: 0 0 9px;
+  color: #2670df;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.signin-card h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+.signin-description {
+  margin: 12px 0 25px;
+  color: #64748b;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Forms */
+.signin-card form,
+.simple-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signin-card label,
+.simple-form label {
+  margin-top: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.signin-card input,
+.simple-form input {
+  width: 100%;
+  min-height: 44px;
+  padding: 12px 13px;
+  border: 1px solid #dbe2ec;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #172033;
+  outline: none;
+  font-size: 14px;
+}
+
+.signin-card input:focus,
+.simple-form input:focus {
+  border-color: #2670df;
+  box-shadow: 0 0 0 3px rgba(38, 112, 223, 0.1);
+}
+
+.signin-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2670df;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signup-text {
+  margin: 22px 0 0;
+  color: #64748b;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.signup-text a {
+  color: #2670df;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* Standalone Login and Register pages */
+.simple-page {
+  width: calc(100% - 40px);
+  max-width: 460px;
+  margin: 70px auto;
+  padding: 32px;
+  border: 1px solid #e7ebf2;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 10px 35px rgba(23, 32, 51, 0.06);
+}
+
+.simple-page h1 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.simple-page > p {
+  color: #64748b;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.simple-page > a {
+  display: block;
+  margin-top: 18px;
+  color: #2670df;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.simple-page > a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  padding: 24px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #edf0f5;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.footer span {
+  line-height: 1.6;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 14px 5%;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .register-btn {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 300px;
+    padding: 45px 5%;
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 7vw, 38px);
+    letter-spacing: -1px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .signin-card,
+  .simple-page {
+    padding: 24px 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
